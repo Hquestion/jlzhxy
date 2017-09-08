@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 微软雅黑;
+}
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+.yellow {
+    color: #ffd002;
+}
+.dark-yellow {
+    color: #e39500;
+}
+.blue {
+    color: #03ffff;
+}
+.grey {
+    color: #ccc;
+}
+.main {
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    left: 1%;
+    top: 0;
+    font-size: 0.2rem;
+}
+.main header {
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    font-size: 0.3rem;
+}
+.main .content {
+    position: absolute;
+    width: 100%;
+    height: 73vh;
+    left: 0;
+    top: 5vh;
+    overflow: hidden;
+}
+.main .content .left {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.main .content .center {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    left: 33.5%;
+    top: 0;
+}
+.main .content .right {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+.main footer {
+    position: absolute;
+    bottom: 2vh;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+}
+.main footer ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main footer ul li {
+    float: left;
+    width: 24%;
+    background: url(../img/video-bg.png) no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    line-height: 20vh;
+}
+.resource-block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: url('../img/bg-s.png') no-repeat;
+    background-size: 100% 100%;
+}
+.resource-block .card {
+    width: 33%;
+    padding: 3% 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.resource-block .card .count {
+    font-size: 0.45rem;
+}
+.wx-block {
+    position: absolute;
+    left: 0;
+    top: 22%;
+    width: 100%;
+    height: 76%;
+    background: url('../img/bg-reverse-l.png') no-repeat;
+    background-size: 100% 100%;
+}
+.wx-block .text-brief {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding: 4vh;
+}
+.wx-block .text-brief .wx-bind, .wx-block .text-brief .wx-access {
+    width: 15vh;
+    height: 15vh;
+    line-height: 15vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.wx-block .text-brief .wx-bind {
+    background-image: url(../img/circle-blue.png);
+}
+.wx-block .text-brief .wx-access {
+    background-image: url(../img/circle-red.png);
+}
+.wx-block .text-brief .wx-access .tag, .wx-block .text-brief .wx-bind .tag {
+    position: absolute;
+    bottom: -4vh;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 3vh;
+    line-height: 3vh;
+}
+.center .title {
+    width: 100%;
+    height: 10%;
+    line-height: 6.5vh;
+    font-size: 0.6rem;
+}
+#time {
+    font-size: 0.2rem;
+    height: 3.5%;
+}
+.access-count {
+    width: 100%;
+    height: 30%;
+    margin-top: 2%;
+    background: url('../img/bg-m.png') no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.access-count .swiper-slide {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+}
+.access-count .swiper-slide .chart-title {
+    margin-top: 2vh;
+}
+.access-count .swiper-slide .access-count-container {
+    height: calc(100% - 6vh);
+    width: 100%;
+    padding-top: 4vh;
+}
+#access-chart {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    width: 100%;
+    height: 50.5%;
+    background: url(../img/bg-reverse-m.png) no-repeat;
+    background-size: 100% 100%;
+}
+#access-chart .chart-title {
+    margin-top: 2vh;
+}
+#access-chart .access-chart-container {
+    width: 100%;
+    height: calc(100% - 6vh);
+}
+.avg-chart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 31.6%;
+    background: url(../img/bg-l.png) no-repeat;
+    background-size: 100% 100%;
+}
+.avg-chart .chart-title {
+    margin-top: 2vh;
+}
+.chart-belong {
+    position: absolute;
+    height: 3vh;
+    line-height: 3vh;
+    top: 2.5vh;
+    right: 3vh;
+    background: #653243;
+}
+.chart-belong span {
+    padding: 0 0.15rem;
+    font-size: 0.15rem;
+}
+.avg-chart .avg-chart-container {
+    width: 100%;
+    height: calc(100% - 6vh);
+}
+.middle {
+    position: absolute;
+    top: 32.6%;
+    left: 0;
+    width: 100%;
+    height: 26.2%;
+    display: flex;
+    justify-content: space-between;
+}
+.middle .score-card {
+    background: url(../img/order-bg.png) no-repeat;
+    background-size: 100% 100%;
+    width: 29%;
+    padding: 1vh;
+    font-size: 0.2rem;
+}
+.middle .score-card .yellow {
+    font-size: 0.18rem;
+}
+#sample-count {
+    font-size: 0.5rem;
+    margin-top: 2.5vh;
+}
+.middle .score-card:nth-child(2) {
+    width: 36%;
+}
+.sample-chart {
+    position: absolute;
+    left: 0;
+    bottom: 2%;
+    width: 100%;
+    height: 38.2%;
+    background: url(../img/bg-reverse-m.png) no-repeat;
+    background-size: 100% 100%;
+}
+.sample-chart .chart-title {
+    margin-top: 2vh;
+}
+.chart-brief {
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+.chart-title {
+    display: inline-block;
+    width: auto;
+    height: 4vh;
+    line-height: 4vh;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+    margin-top: 4vh;
+    background: url(../img/title-bg-2.png) no-repeat;
+    background-size: 100% 100%;
+}
+#wx-access-chart.chart-container {
+    width: 100%;
+    height: calc(100% - 8vh);
+}
+#wxbind-count, #wxaccess-count {
+    font-size: 0.35rem;
+}
+.num-splitor {
+    display: inline-block;
+}
+.num-splitor .access-count-num {
+    font-size: 0.6rem;
+    background: rgba(155,155,155,.5);
+    padding: 0rem 0.1rem;
+    margin-left: 5px;
+}
+.up-icon {
+    padding: 0 0.05rem;
+    vertical-align: baseline;
+}
+.up-num {
+    margin-left: 0.05rem;
+}
+.hide {
+    opacity: 0;
+    display: none;
+}
+.show {
+    display: block;
+}
+.sample-chart-container {
+    width: 100%;
+    height: calc(100% - 6vh);
+}
+ul.class-sort .order-sort > div {
+    display: inline-block;
+    font-size: 0.15rem;
+}
+ul.class-sort .order-sort .sort-code {
+    background: #e39500;
+    width: 0.2rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    margin-right: 0.2rem;
+    text-align: center;
+}
+ul.class-sort .order-sort .sort-code.opacity{
+    background: rgba(150,150,150,.5);
+}
+.no-data {
+    margin-top: 4vh;
+}
+ul#teacher-sort .order-sort > div {
+    display: inline-block;
+    font-size: 0.15rem;
+}
+ul#teacher-sort .order-sort .sort-code.opacity{
+    background: rgba(150,150,150,.5);
+}
+ul#teacher-sort .order-sort .sort-code {
+    background: #e39500;
+    width: 0.2rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    margin-right: 0.1rem;
+    text-align: center;
+}
+ul#teacher-sort .order-sort .grade-sbj {
+    width: 40%;
+}
+ul#teacher-sort .order-sort .teachername {
+    width: 26%;
+}

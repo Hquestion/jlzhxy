@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>九龙中学智慧校园数字大屏</title>
+    <link type="text/css" rel="stylesheet" href="./css/main.css">
+    <link type="text/css" rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <script src="./js/viewport_max.js"></script>
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/util.js"></script>
+</head>
+<body>
+    <div class="main">
+        <header class="grey">南京市九龙中学</header>
+        <div class="content">
+            <div class="left">
+                <div class="resource-block">
+                    <div class="s-bank card">
+                        <div>校本题库资源数</div>
+                        <div id="s-bank-count" class="count yellow">0</div>
+                        <div id="bank-month-raise">
+                            本月+ <span id="bank-raise-count">0</span><img class="up-icon hide" src="./img/up-s.png">
+                        </div>
+                    </div>
+                    <div class="s-file card">
+                        <div>校本课件总数</div>
+                        <div id="s-file-count" class="count yellow">0</div>
+                        <div id="file-month-raise">
+                            本月+ <span id="file-raise-count">0</span>
+                            <img class="up-icon hide" src="./img/up-s.png">
+                        </div>
+                    </div>
+                    <div class="s-error card">
+                        <div>校本错题库总数</div>
+                        <div id="s-error-count" class="count yellow">0</div>
+                        <div id="error-month-raise">
+                            本月+ <span id="error-raise-count">0</span><img class="up-icon hide" src="./img/up-s.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="wx-block">
+                    <div class="text-brief">
+                        <div class="wx-bind">
+                            <span id="wxbind-count">0</span>
+                            <span class="tag">微信绑定数</span>
+                        </div>
+                        <div class="wx-access">
+                            <span id="wxaccess-count">0</span>
+                            <span class="tag">微信访问数（周）</span>
+                        </div>
+                    </div>
+                    <div class="chart-brief">
+                        <div class="chart-title">微信日访问变化</div>
+                        <div class="chart-container" id="wx-access-chart">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="title blue">智慧校园数字大屏</div>
+                <div id="time"></div>
+                <div class="access-count">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="chart-title">智慧校园平台访问数（总）</div>
+                                <div class="access-count-container">
+                                    <div id="access-count-t" class="num-splitor">
+
+                                    </div>
+                                    <span id="access-raise"><span class="up-num"></span><img class="up-icon" src="./img/up.png"></span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="chart-title">智慧校园平台访问数（月）</div>
+                                <div class="access-count-container">
+                                    <div id="access-count-m" class="num-splitor">
+
+                                    </div>
+                                    <span id="access-raise-m"><span class="up-num"></span><img class="up-icon" src="./img/up.png"></span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="chart-title">智慧校园平台访问数（周）</div>
+                                <div class="access-count-container">
+                                    <div id="access-count-w" class="num-splitor"></div>
+                                    <span id="access-raise-w"><span class="up-num"></span><img class="up-icon" src="./img/up.png"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="access-chart">
+                    <p class="chart-title">智慧校园平台日访问数曲线</p>
+                    <div class="access-chart-container"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="avg-chart">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="score-card">
+                        <div>学情大数据采样</div>
+                        <div class="yellow">总次数</div>
+                        <div id="sample-count" class="yellow">0</div>
+                        <div><span>本月</span><span id="sample-raise"></span></div>
+                    </div>
+                    <div class="score-card">
+                        <div>学情大数据采样</div>
+                        <div class="yellow">班级老师排名</div>
+                        <ul id="teacher-sort">
+
+                        </ul>
+                    </div>
+                    <div class="score-card" id="class-exam-loop">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sample-chart">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li>
+                    视频监控画面
+                </li>
+                <li>
+                    视频监控画面
+                </li>
+                <li>
+                    视频监控画面
+                </li>
+                <li>
+                    视频监控画面
+                </li>
+            </ul>
+        </footer>
+    </div>
+<script src="./js/index.js"></script>
+</body>
+</html>
